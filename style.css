@@ -1,0 +1,151 @@
+/* Selector general, univerdal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+/* Selector de etiqueta */
+body {
+    background: #0f0f10;        
+    color: #e6e6e6;              
+    padding: 30px;
+    line-height: 1.6;
+}
+
+/* Header */
+#main-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 2.4rem;
+    color: #7cdfff;               
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #9ba1a6;
+}
+
+/* Navbar - menu */
+#main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.nav-link {
+    color: #7cdfff;
+    text-decoration: none;
+    font-weight: 600;
+    padding-bottom: 3px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #00ffd0;
+    border-bottom: 2px solid #00ffd0;
+    transform: scale(1.1);
+}
+
+/* Redes sociales */
+#social-icons {
+    background: #1b1b1d;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 45px;
+    border-left: 4px solid #7cdfff;
+    border-right: 4px solid #00ffd0;
+}
+
+#social-icons h2 {
+    margin-bottom: 10px;
+    color: #00ffd0;
+}
+
+/* Botones */
+.btn {
+    background: linear-gradient(135deg, #00ffd0, #7cdfff);
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s ease;
+    box-shadow: 0 0 8px #00ffd078;
+}
+
+/* HOVER con efectos visuales */
+.btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px #7cdfff;
+    filter: brightness(1.15);
+}
+
+/* Botones dentro de social-icons redondos */
+#social-icons .btn {
+    border-radius: 30px;
+}
+
+/* Botón especial (Radio) */
+.btn-radio:hover {
+    background: #ff7cd3;
+    box-shadow: 0 0 15px #ff7cd3;
+}
+
+/* Secciones extra */
+#extras h2 {
+    color: #7cdfff;
+    margin-bottom: 15px;
+}
+
+/* Texto con pseudoelemento decorativo */
+.destacado::after {
+    content: " ⚡";
+    color: #ffea00;
+}
+
+/* Selectores abanzados -Lista */
+#lista-ejemplo li {
+    margin: 8px 0;
+}
+
+/* Atributo tipo b */
+#lista-ejemplo li[data-tipo="b"] {
+    color: #ffe680;
+    font-weight: bold;
+}
+
+/* Primer elemento subrayado */
+#lista-ejemplo li:first-child {
+    text-decoration: underline;
+}
+
+/* HOVER especial con cambio de tamaño y color */
+#lista-ejemplo li:hover {
+    color: #00ffd0;
+    transform: translateX(8px);
+    transition: 0.2s;
+}
+
+/* Fooder */
+#main-footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #83898d;
+    font-size: 0.9rem;
+    padding-top: 10px;
+    border-top: 1px solid #333;
+}
+

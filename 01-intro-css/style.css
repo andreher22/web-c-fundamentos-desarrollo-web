@@ -1,0 +1,34 @@
+/* Selector general, univerdal */
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+/* Selector de etiqueta */
+body{
+    background-color: #232323;
+    color: #FFFFFF;
+}
+
+/* Selector de clase */
+.btn {
+    background-color: aquamarine;
+    padding: 15px;
+}
+
+/* Selector de ID */
+#social-icons {
+    background-color: orangered;
+}
+
+/* Selectores abanzados */
+#social-icons .btn {
+    border-radius: 30px;
+    
+}
+
+/* Pseudoclase */
+.btn:hover {
+    background-color: blueviolet;
+    color: #FFFFFF;
+}
