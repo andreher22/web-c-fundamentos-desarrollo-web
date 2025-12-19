@@ -6,58 +6,60 @@
 }
 
 /* Clon de Starbucks */
-header{
+header {
   display: flex;
   justify-content: center;
   padding: 20px 0;
   border-bottom: 1px solid #bdbdbd;
 }
 
-.container{
+.container {
   width: 100%;
   display: flex;
   justify-content: space-between;
   max-width: 1300px;
 }
 
-.header-left{
+.header-left {
   display: flex;
   align-items: center;
   column-gap: 20px;
 }
 
-nav{
+nav {
   display: flex;
   gap: 15px;
 }
 
-.header-left nav a{
+.header-left nav a {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
   color: black;
   transition-duration: .8s;
 }
-.header-left nav a:hover{
+
+.header-left nav a:hover {
   color: #00754a;
 }
 
-.header-right{
+.header-right {
   display: flex;
   column-gap: 20px;
   align-items: center;
 }
 
-.locacion a{
+.locacion a {
   text-decoration: none;
   color: black;
   transition-duration: .8s;
 }
-.locacion a:hover{
+
+.locacion a:hover {
   color: #00754a;
 }
 
-.btn-registro{
+.btn-registro {
   padding: 10px 20px;
   border-radius: 25px;
   border: none;
@@ -66,7 +68,8 @@ nav{
   font-weight: bold;
   cursor: pointer;
 }
-.btn-iniciar{
+
+.btn-iniciar {
   padding: 10px 20px;
   border-radius: 25px;
   border: 1px solid #000;
@@ -77,28 +80,30 @@ nav{
 }
 
 /* Banner */
-.banner{
+.banner {
   display: flex;
   width: 100%;
   max-width: 1250px;
   border-radius: 15px;
   margin: 50px auto;
   /* overflow: hidden; */
-/*   background-color: orange; */
+  /*   background-color: orange; */
 }
 
-.banner-info, .banner-image{
+.banner-info,
+.banner-image {
   /* flex-grow: 1; */
   width: 50%;
 }
 
-.banner-info{
+.banner-info {
   padding: 100px 0 100px 30px;
   background-color: #1e3932;
   color: white;
   border-radius: 18px 0 0 18px;
 }
-.banner-info a{
+
+.banner-info a {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 25px;
@@ -111,27 +116,30 @@ nav{
   margin-top: 20px;
 }
 
-.banner-image{
+.banner-image {
   position: relative;
   background-image: url('https://cdn.pixabay.com/photo/2019/09/04/20/34/field-4452538_1280.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 0 18px 18px 0;
 }
-.banner-image .malteada{
+
+.banner-image .malteada {
   position: absolute;
   right: 5%;
   bottom: 0;
   width: 250px;
 }
-.fresa{
+
+.fresa {
   position: absolute;
   width: 90px;
   right: 11%;
   top: 3%;
   transform: rotate(28deg);
 }
-.galleta{
+
+.galleta {
   position: absolute;
   width: 150px;
   bottom: 0%;
@@ -142,7 +150,7 @@ nav{
 
 /* Footer */
 
-.footer-container{
+.footer-container {
   display: flex;
   width: 100%;
   justify-content: flex-start;
@@ -151,26 +159,28 @@ nav{
   margin: auto;
 }
 
-footer{
+footer {
   background-color: #1e3932;
   color: white;
   padding: 50px 0;
 }
-footer a{
+
+footer a {
   color: rgba(255, 255, 255, 0.712);
   text-decoration: none;
   transition-duration: .4s;
 }
-footer a:hover{
+
+footer a:hover {
   color: white;
 }
 
-footer nav{
+footer nav {
   display: flex;
   flex-direction: column;
 }
 
-footer h3{
+footer h3 {
   margin-bottom: 30px;
 }
 
@@ -211,11 +221,13 @@ footer h3{
   width: 50px;
   width: 40%;
 }
+
 .foca {
   align-self: auto;
   width: 40%;
   flex-shrink: 4;
 }
+
 /* .perro {
   align-self: auto;
   flex-grow: 1;
@@ -223,4 +235,119 @@ footer h3{
 .vaca {
   align-self: auto;
   width: 40%;
+}
+
+/* Sección Caracterírsticas */
+
+.letras {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.layout-Starbucks {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.left {
+  display: flex;
+  width: 298.4px;
+  height: 211px;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  width: 298.4px;
+  height: 211px;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.right {
+  display: flex;
+  width: 298.4px;
+  height: 211px;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.imagen1 {
+  align-self: flex-end;
+}
+
+.imagen2 {
+  align-self: flex-end;
+}
+
+.imagen3 {
+  align-self: flex-end;
+}
+
+
+/* Tablet */
+@media screen and (max-width: 890px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .header-left {
+    justify-content: center;
+  }
+
+  .header-right {
+    justify-content: center;
+  }
+
+  .layout-Starbucks {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+
+  .imagen1,
+  .imagen2,
+  .imagen3 {
+    align-self: center;
+  }
+
+  .left,
+  .center,
+  .right {
+    height: auto;
+    width: auto;
+    padding: 0 30px;
+  }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .header-left {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header-right {
+    flex-direction: column;
+    row-gap: 15px;
+    margin-top: 15px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+
 }
